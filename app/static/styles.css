@@ -1,0 +1,136 @@
+body {
+    background-color: black;
+    color: #FF9000;
+    font-size: 16px;
+    font-family: "Roboto";
+}
+
+form * {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+    color: #ffffff;
+}
+
+body a {
+    color: white;
+    text-decoration: none;
+}
+
+body,
+header,
+main,
+footer,
+.container,
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0E0E0E;
+}
+
+main {
+    background-color: black;
+}
+
+.btn {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease
+}
+
+.btn-primary {
+    color: black;
+    background-color: #FF9000;
+}
+
+.btn-secondary {
+    color: white;
+    background-color: #252525;
+}
+
+.btn-primary:hover {
+    background-color: #fcb85e;
+}
+
+.btn-secondary:hover {
+    background-color: #404040;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.form-control {
+    padding: 30px;
+    width: 50vh;
+    background-color: #0E0E0E;
+    border-radius: 10px;
+}
+
+.form-control label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-control input,
+.form-control textarea {
+    padding: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #404040;
+    border-radius: 5px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.currency-field {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 18px;
+    background-color: #404040;
+    border-radius: 5px;
+}

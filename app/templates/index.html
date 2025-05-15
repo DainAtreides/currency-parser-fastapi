@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Exchange Rates</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
+
 <body>
-    <h2>Exchange Rate:</h2>
-    <form method="get">
-        <label for="currency">Currency code:</label>
-        <input type="text" id="currency" name="currency" value="{{ currency }}">
-        <button type="submit">Get Currency</button>
-    </form>
-    {% if rate %}
-        <p>1 {{ currency }} = {{ rate }} RUB (at {{ date }})</p>
-    {% endif %}
+    <div class="container">
+        <form method="GET" class="form-control">
+            <h2>Exchange Rate:</h2>
+            <label for="currency">Currency code:</label>
+            <input type="text" id="currency" name="currency" value="{{ currency }}">
+            {% if rate %}
+            <p class="currency-field">1 {{ currency }} = {{ rate }} RUB (at {{ date }})</p>
+            {% else %}
+            <p class="currency-field">Currency not found.</p>
+            {% endif %}
+            <button type="submit" class="btn btn-primary">Get</button>
+        </form>
+    </div>
 </body>
+
 </html>

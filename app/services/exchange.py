@@ -30,7 +30,7 @@ async def get_exchange_rate(currency_code: str) -> Tuple[float | None, str | Non
                 date = response.headers.get("Date")
                 logger.debug(
                     f"Found rate: {value / nominal} RUB (Nominal: {nominal}, Value: {value})")
-                return round(value / nominal, 4), date
+                return round(value / nominal, 2), date
 
         logger.warning(
             f"Currency code {currency_code} not found in response data.")
